@@ -1,6 +1,6 @@
 {
   "name": "cdepillabout-keter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "cdepillabout",
   "summary": "Install keter, a deployment system for Yesod web applications.",
   "license": "Apache 2.0",
