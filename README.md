@@ -40,6 +40,7 @@ class {'::keter': }
 
 - `version` parameter. Used to set a different version.
   (Currently only version 1.3.6 is available.)
+
   ```
   class {'::keter':
 	version => '1.3.6',
