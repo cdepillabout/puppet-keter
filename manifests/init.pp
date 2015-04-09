@@ -35,7 +35,21 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class keter {
+class keter (
+  $version        = $keter::params::version,
+  $package_ensure = $keter::params::package_ensure,
+  $service_enable = $keter::params::service_enable,
+  $service_ensure = $keter::params::service_ensure,
+) inherits keter::params {
 
+  validate_string($package_ensure)
+  validate_bool($service_enable)
+  validate_string($service_ensure)
+  validate_string($version)
 
+  anchor { 'keter::begin': } ->
+  class { '::keter::install': } ->
+  class { '::keter::config': } ~>
+  class { '::keter::service': } ->
+  anchor { 'keter::end': }
 }
