@@ -56,6 +56,6 @@ getting it working on different distributions.
 
 Pull requests are welcome.  https://github.com/cdepillabout/puppet-keter/pulls
 
-## Release Notes/Contributors/Etc **Optional**
+## Release Notes/Contributors/Etc
 
 *TODO*
