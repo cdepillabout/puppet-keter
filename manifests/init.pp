@@ -1,39 +1,41 @@
 # == Class: keter
 #
-# Full description of class keter here.
+# Install keter, the deployment system for Yesod web applications.
 #
 # === Parameters
 #
-# Document parameters here.
+# [*version*]
+#   Version of keter that will be installed.  This is quite limited.
+#   You can look at the debs to see what versions are available.
+#   https://github.com/cdepillabout/puppet-keter/tree/master/files
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
+# [*package_ensure*]
+#   Argument to `ensure` setting that will be passed to the package
+#   resource.  Defaults to 'latest'.
+#
+# [*service_enable*]
+#   Argument to `enable` setting that will be passed to the service
+#   resource.  Defaults to 'true'.
+#
+# [*service_ensure*]
+#   Argument to `ensure` setting that will be passed to the service
+#   resource.  Defaults to 'running'.
 #
 # === Variables
-#
-# Here you should define a list of variables that this module would require.
-#
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if
-#   it has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should be avoided in favor of class parameters as
-#   of Puppet 2.6.)
 #
 # === Examples
 #
 #  class { 'keter':
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
+#    version => '1.3.6',
 #  }
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Dennis Gosnell <cdep.illabout@gmail.com>
 #
 # === Copyright
 #
-# Copyright 2015 Your name here, unless otherwise noted.
+# Copyright 2015 Dennis Gosnell, unless otherwise noted.
 #
 class keter (
   $version        = $keter::params::version,
