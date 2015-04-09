@@ -7,8 +7,21 @@
   "source": "https://github.com/cdepillabout/puppet-keter.git",
   "project_page": "https://github.com/cdepillabout/puppet-keter",
   "issues_url": "https://github.com/cdepillabout/puppet-keter/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "14.04" ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [ "7" ]
+    }
+  ]
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {
+      "name":"puppetlabs-stdlib",
+      "version_requirement":">= 1.0.0"
+    }
   ]
 }
 
