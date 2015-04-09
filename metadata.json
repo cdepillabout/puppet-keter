@@ -1,0 +1,14 @@
+{
+  "name": "cdepillabout-keter",
+  "version": "0.1.0",
+  "author": "cdepillabout",
+  "summary": "Install keter, which is a deployment system for Yesod web applications.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/cdepillabout/puppet-keter.git",
+  "project_page": "https://github.com/cdepillabout/puppet-keter",
+  "issues_url": "https://github.com/cdepillabout/puppet-keter/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
