@@ -52,6 +52,9 @@ class {'::keter': }
 Currently only available on Debian 7.  I would gladly accept pull requests
 getting it working on different distributions.
 
+*TODO* This module doesn't install or touch /etc/keter.conf.
+It would be nice to add support for this.
+
 ## Development
 
 Pull requests are welcome.  https://github.com/cdepillabout/puppet-keter/pulls
